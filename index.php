@@ -77,13 +77,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
+<?php
+$name = array("John","Nicolas","Emilie");
+if(isset($_GET['n']) && in_array($_GET['n'],$name))
+echo '                    <h2 class="section-heading">Hello '.htmlentities($_GET['n']).'</h2>';
+else {
+?>
                     <h2 class="section-heading">Login</h2>
                     <hr class="light">
-                    <p class="text-faded" style="color:black;"><input type="text" id="user" style="padding-left:10px;"></p>
+		    <form id="connect" method="GET">
+                    <p class="text-faded" style="color:black;"><input type="text" id="user" name="n" style="padding-left:10px;"></p>
                     <p class="text-faded" style="color:black;"><input type="password" style="padding-left:10px;"></p>
-                    <a href="#" class="btn btn-default btn-xl">Log in</a>
+                    <a href="#" class="btn btn-default btn-xl" onclick="$('#connect').submit();">Log in</a>
+		    </form>
                 </div>
             </div>
+<?php
+}
+?>
         </div>
     </section>
 

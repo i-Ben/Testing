@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>Creative - Start Bootstrap Theme 3</title>
+=======
+    <title>Creative - Start Bootstrap Theme 6</title>
+>>>>>>> test
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
